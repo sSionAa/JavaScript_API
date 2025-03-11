@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sofia", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: brown;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    border: 5px solid rgb(226, 219, 181);
+    border-radius: 15px;
+    max-width: 500px;
+    min-height: 400px;
+    padding: 20px;
+    background-color: rgb(249, 242, 231);
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image_box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: 5px solid rgb(226, 219, 181);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.image_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image_photographer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.image_photographer-box, .image_likes-box {
+    border-radius: 15px;
+    border: 5px solid rgb(226, 219, 181);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    min-width: 220px;
+    min-height: 110px;
+    padding: 10px;
+}
+
+.image_photographer-name, .image_photographer {
+    text-align: center;
+}
+
+.image_likes-box {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    align-items: center;
+    padding: 20px;
+}
+
+.image_likes-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.image_likes-svg:hover {
+    fill: brown;
+    transition: 0.6s ease;
+}
+
+.image_likes-svg:active path {
+    fill: rgb(224, 198, 54);
+    transition: 0.4s ease;
+}
